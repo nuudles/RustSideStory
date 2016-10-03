@@ -33,6 +33,10 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		return 2
 	}
 
+	override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		animator.animate(scrollView.contentOffset.x)
+	}
+
 	// MARK: - Private methods
 	private func setupPage0() {
 		let imageView = UIImageView(image: #imageLiteral(resourceName: "logo"))
@@ -69,9 +73,5 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		}
 
 		keepView(titleLabel, onPage: 1)
-	}
-
-	override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-		animator.animate(scrollView.contentOffset.x)
 	}
 }
