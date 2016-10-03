@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302072E31DA1858D0004DB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302072E21DA1858D0004DB40 /* AppDelegate.swift */; };
+		302072EA1DA1858D0004DB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302072E91DA1858D0004DB40 /* Assets.xcassets */; };
+		302072ED1DA1858D0004DB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */; };
+		302072F61DA189710004DB40 /* SyntaxKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302072F51DA189710004DB40 /* SyntaxKit.framework */; };
+		302072F81DA189770004DB40 /* RazzleDazzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302072F71DA189770004DB40 /* RazzleDazzle.framework */; };
+		30EA92051DA199E500FEB7E7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EA92041DA199E500FEB7E7 /* SnapKit.framework */; };
+		30EA920B1DA19B5200FEB7E7 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA920A1DA19B5200FEB7E7 /* PresentationViewController.swift */; };
+		30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */; };
+		30EA920F1DA1F3ED00FEB7E7 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 30EA920E1DA1F3ED00FEB7E7 /* Fonts */; };
+		30EA92111DA1F44A00FEB7E7 /* UIFonts+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		302072DF1DA1858D0004DB40 /* RustSideStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustSideStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		302072E21DA1858D0004DB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		302072E91DA1858D0004DB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		302072EC1DA1858D0004DB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		302072EE1DA1858D0004DB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302072F51DA189710004DB40 /* SyntaxKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyntaxKit.framework; path = Carthage/Build/iOS/SyntaxKit.framework; sourceTree = "<group>"; };
+		302072F71DA189770004DB40 /* RazzleDazzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RazzleDazzle.framework; path = Carthage/Build/iOS/RazzleDazzle.framework; sourceTree = "<group>"; };
+		30EA92041DA199E500FEB7E7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		30EA920A1DA19B5200FEB7E7 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
+		30EA920E1DA1F3ED00FEB7E7 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFonts+Convenience.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		302072DC1DA1858D0004DB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302072F61DA189710004DB40 /* SyntaxKit.framework in Frameworks */,
+				302072F81DA189770004DB40 /* RazzleDazzle.framework in Frameworks */,
+				30EA92051DA199E500FEB7E7 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302072D61DA1858D0004DB40 = {
+			isa = PBXGroup;
+			children = (
+				302072E11DA1858D0004DB40 /* RustSideStory */,
+				302072E01DA1858D0004DB40 /* Products */,
+				302072F41DA189710004DB40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		302072E01DA1858D0004DB40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302072DF1DA1858D0004DB40 /* RustSideStory.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		302072E11DA1858D0004DB40 /* RustSideStory */ = {
+			isa = PBXGroup;
+			children = (
+				302072E21DA1858D0004DB40 /* AppDelegate.swift */,
+				30EA92081DA19B5200FEB7E7 /* Extensions */,
+				30EA92091DA19B5200FEB7E7 /* ViewControllers */,
+				30EA92071DA19A1400FEB7E7 /* Resources */,
+			);
+			path = RustSideStory;
+			sourceTree = "<group>";
+		};
+		302072F41DA189710004DB40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30EA92041DA199E500FEB7E7 /* SnapKit.framework */,
+				302072F71DA189770004DB40 /* RazzleDazzle.framework */,
+				302072F51DA189710004DB40 /* SyntaxKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30EA92071DA19A1400FEB7E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				302072E91DA1858D0004DB40 /* Assets.xcassets */,
+				302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */,
+				302072EE1DA1858D0004DB40 /* Info.plist */,
+				30EA920E1DA1F3ED00FEB7E7 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		30EA92081DA19B5200FEB7E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */,
+				30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30EA92091DA19B5200FEB7E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30EA920A1DA19B5200FEB7E7 /* PresentationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		302072DE1DA1858D0004DB40 /* RustSideStory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302072F11DA1858D0004DB40 /* Build configuration list for PBXNativeTarget "RustSideStory" */;
+			buildPhases = (
+				302072DB1DA1858D0004DB40 /* Sources */,
+				302072DC1DA1858D0004DB40 /* Frameworks */,
+				302072DD1DA1858D0004DB40 /* Resources */,
+				302072F91DA189880004DB40 /* Carthage Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RustSideStory;
+			productName = RustSideStory;
+			productReference = 302072DF1DA1858D0004DB40 /* RustSideStory.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		302072D71DA1858D0004DB40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = nuudles;
+				TargetAttributes = {
+					302072DE1DA1858D0004DB40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YSN552KTYP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 302072DA1DA1858D0004DB40 /* Build configuration list for PBXProject "RustSideStory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 302072D61DA1858D0004DB40;
+			productRefGroup = 302072E01DA1858D0004DB40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				302072DE1DA1858D0004DB40 /* RustSideStory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		302072DD1DA1858D0004DB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EA920F1DA1F3ED00FEB7E7 /* Fonts in Resources */,
+				302072ED1DA1858D0004DB40 /* LaunchScreen.storyboard in Resources */,
+				302072EA1DA1858D0004DB40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		302072F91DA189880004DB40 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SyntaxKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RazzleDazzle.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		302072DB1DA1858D0004DB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EA92111DA1F44A00FEB7E7 /* UIFonts+Convenience.swift in Sources */,
+				30EA920B1DA19B5200FEB7E7 /* PresentationViewController.swift in Sources */,
+				302072E31DA1858D0004DB40 /* AppDelegate.swift in Sources */,
+				30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302072EC1DA1858D0004DB40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		302072EF1DA1858D0004DB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		302072F01DA1858D0004DB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		302072F21DA1858D0004DB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YSN552KTYP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RustSideStory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuudles.RustSideStory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		302072F31DA1858D0004DB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YSN552KTYP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RustSideStory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuudles.RustSideStory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		302072DA1DA1858D0004DB40 /* Build configuration list for PBXProject "RustSideStory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302072EF1DA1858D0004DB40 /* Debug */,
+				302072F01DA1858D0004DB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302072F11DA1858D0004DB40 /* Build configuration list for PBXNativeTarget "RustSideStory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302072F21DA1858D0004DB40 /* Debug */,
+				302072F31DA1858D0004DB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 302072D71DA1858D0004DB40 /* Project object */;
+}

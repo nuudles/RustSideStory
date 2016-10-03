@@ -1,0 +1,3 @@
+github "https://github.com/alehed/SyntaxKit" "master"
+github "https://github.com/teambition/RazzleDazzle" "master"
+github "https://github.com/SnapKit/SnapKit" ~> 3.0.0
