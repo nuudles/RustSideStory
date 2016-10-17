@@ -14,6 +14,7 @@
 		302072F81DA189770004DB40 /* RazzleDazzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302072F71DA189770004DB40 /* RazzleDazzle.framework */; };
 		306563691DA947BB009683DA /* SampleSource in Resources */ = {isa = PBXBuildFile; fileRef = 306563681DA947BB009683DA /* SampleSource */; };
 		3065636C1DA9495D009683DA /* PresentationViewController+Slide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */; };
+		3065636E1DA94A8F009683DA /* PresentationViewController+Slide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */; };
 		309F0F321DA33828009A7777 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 309F0F311DA33828009A7777 /* Videos */; };
 		30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A851DB0628D00B3F5EE /* VideoView.swift */; };
 		30D76A881DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */; };
@@ -35,6 +36,7 @@
 		302072F71DA189770004DB40 /* RazzleDazzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RazzleDazzle.framework; path = Carthage/Build/iOS/RazzleDazzle.framework; sourceTree = "<group>"; };
 		306563681DA947BB009683DA /* SampleSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleSource; sourceTree = "<group>"; };
 		3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide1.swift"; sourceTree = "<group>"; };
+		3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide2.swift"; sourceTree = "<group>"; };
 		309F0F311DA33828009A7777 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
 		30D76A851DB0628D00B3F5EE /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatedPagingScrollViewController+KeepViewRange.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */,
+				3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */,
 			);
 			name = Slides;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30EA92111DA1F44A00FEB7E7 /* UIFont+Convenience.swift in Sources */,
+				3065636E1DA94A8F009683DA /* PresentationViewController+Slide2.swift in Sources */,
 				30EA920B1DA19B5200FEB7E7 /* PresentationViewController.swift in Sources */,
 				302072E31DA1858D0004DB40 /* AppDelegate.swift in Sources */,
 				3065636C1DA9495D009683DA /* PresentationViewController+Slide1.swift in Sources */,
