@@ -12,66 +12,67 @@ import SyntaxKit
 import SnapKit
 
 class PresentationViewController: AnimatedPagingScrollViewController {
+	// MARK: - Internal variables
+	let bundleManager: BundleManager = {
+		let manager = BundleManager() { (identifier, isLanguage) in
+			let url = Bundle.main.url(forResource: identifier, withExtension: nil, subdirectory: "TextMateFiles")
+			NSLog("\(identifier): \(url)")
+			return url
+		}
+		return manager
+	}()
+	lazy var theme: Theme = { [unowned self] in
+		guard let theme = self.bundleManager.theme(withIdentifier: "Monokai.tmTheme") else {
+			fatalError("Could not find Theme file")
+		}
+		return theme
+	}()
+	lazy var swiftParser: AttributedParser = { [unowned self] in
+		guard let language = self.bundleManager.language(withIdentifier: "Swift.tmLanguage") else {
+			fatalError("Could not find Swift language files")
+		}
+		let parser = AttributedParser(language: language, theme: self.theme)
+		return parser
+	}()
+	lazy var objCParser: AttributedParser = { [unowned self] in
+		guard let language = self.bundleManager.language(withIdentifier: "Objective-C.tmLanguage") else {
+			fatalError("Could not find Objective C language files")
+		}
+		let parser = AttributedParser(language: language, theme: self.theme)
+		return parser
+	}()
+	lazy var rustParser: AttributedParser = { [unowned self] in
+		guard let language = self.bundleManager.language(withIdentifier: "Rust.tmLanguage") else {
+			fatalError("Could not find Rust language files")
+		}
+		let parser = AttributedParser(language: language, theme: self.theme)
+		return parser
+	}()
+
 	// MARK: - View methods
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		automaticallyAdjustsScrollViewInsets = false
-
-		setupPage0()
-		setupPage1()
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 
-		scrollView.setContentOffset(CGPoint(x: 1024 * 1, y: 0), animated: false)
+		scrollView.setContentOffset(CGPoint(x: 1024 * 4, y: 0), animated: false)
 	}
 
 	// MARK: - Overridden AnimatedPagingScrollViewController methods
 	override func numberOfPages() -> Int {
-		return 2
+		return 15
 	}
 
-	override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-		animator.animate(scrollView.contentOffset.x)
-	}
-
-	// MARK: - Private methods
-	private func setupPage0() {
-		let imageView = UIImageView(image: #imageLiteral(resourceName: "logo"))
-		imageView.contentMode = .scaleAspectFit
-		contentView.addSubview(imageView)
-
-		imageView.snp.makeConstraints { (make) in
-			make.width.height.equalTo(view).offset(-100)
-			make.centerY.equalTo(contentView)
-		}
-
-		let alphaAnimation = AlphaAnimation(view: imageView)
-		alphaAnimation[0] = 1.0
-		alphaAnimation[1024] = 0.0
-		animator.addAnimation(alphaAnimation)
-
-		let backgroundColorAnimation = BackgroundColorAnimation(view: view)
-		backgroundColorAnimation[0] = UIColor(intRed: 146, intGreen: 47, intBlue: 41)
-		backgroundColorAnimation[1024] = .black
-		animator.addAnimation(backgroundColorAnimation)
-
-		keepView(imageView, onPage: 0)
-	}
-
-	private func setupPage1() {
+	// MARK: - Internal methods
+	func titleLabel(text: String) -> UILabel {
 		let titleLabel = UILabel()
 		titleLabel.font = Font.dirtyEgo.withSize(size: 100)
-		titleLabel.text = "INTRODUCTION"
+		titleLabel.text = text
 		titleLabel.textColor = .white
-		contentView.addSubview(titleLabel)
-
-		titleLabel.snp.makeConstraints { (make) in
-			make.top.equalTo(contentView).offset(30)
-		}
-
-		keepView(titleLabel, onPage: 1)
+		return titleLabel
 	}
 }

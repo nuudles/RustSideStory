@@ -12,11 +12,16 @@
 		302072ED1DA1858D0004DB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */; };
 		302072F61DA189710004DB40 /* SyntaxKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302072F51DA189710004DB40 /* SyntaxKit.framework */; };
 		302072F81DA189770004DB40 /* RazzleDazzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302072F71DA189770004DB40 /* RazzleDazzle.framework */; };
+		306563691DA947BB009683DA /* SampleSource in Resources */ = {isa = PBXBuildFile; fileRef = 306563681DA947BB009683DA /* SampleSource */; };
+		309F0F321DA33828009A7777 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 309F0F311DA33828009A7777 /* Videos */; };
+		30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A851DB0628D00B3F5EE /* VideoView.swift */; };
+		30D76A881DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */; };
 		30EA92051DA199E500FEB7E7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EA92041DA199E500FEB7E7 /* SnapKit.framework */; };
 		30EA920B1DA19B5200FEB7E7 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA920A1DA19B5200FEB7E7 /* PresentationViewController.swift */; };
 		30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */; };
 		30EA920F1DA1F3ED00FEB7E7 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 30EA920E1DA1F3ED00FEB7E7 /* Fonts */; };
-		30EA92111DA1F44A00FEB7E7 /* UIFonts+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */; };
+		30EA92111DA1F44A00FEB7E7 /* UIFont+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA92101DA1F44A00FEB7E7 /* UIFont+Convenience.swift */; };
+		30EA92131DA2003300FEB7E7 /* TextMateFiles in Resources */ = {isa = PBXBuildFile; fileRef = 30EA92121DA2003300FEB7E7 /* TextMateFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +32,16 @@
 		302072EE1DA1858D0004DB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		302072F51DA189710004DB40 /* SyntaxKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyntaxKit.framework; path = Carthage/Build/iOS/SyntaxKit.framework; sourceTree = "<group>"; };
 		302072F71DA189770004DB40 /* RazzleDazzle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RazzleDazzle.framework; path = Carthage/Build/iOS/RazzleDazzle.framework; sourceTree = "<group>"; };
+		306563681DA947BB009683DA /* SampleSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleSource; sourceTree = "<group>"; };
+		309F0F311DA33828009A7777 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
+		30D76A851DB0628D00B3F5EE /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatedPagingScrollViewController+KeepViewRange.swift"; sourceTree = "<group>"; };
 		30EA92041DA199E500FEB7E7 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		30EA920A1DA19B5200FEB7E7 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
 		30EA920E1DA1F3ED00FEB7E7 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
-		30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFonts+Convenience.swift"; sourceTree = "<group>"; };
+		30EA92101DA1F44A00FEB7E7 /* UIFont+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Convenience.swift"; sourceTree = "<group>"; };
+		30EA92121DA2003300FEB7E7 /* TextMateFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TextMateFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			children = (
 				302072E21DA1858D0004DB40 /* AppDelegate.swift */,
 				30EA92081DA19B5200FEB7E7 /* Extensions */,
+				309F0F331DA33A9E009A7777 /* Views */,
 				30EA92091DA19B5200FEB7E7 /* ViewControllers */,
 				30EA92071DA19A1400FEB7E7 /* Resources */,
 			);
@@ -86,13 +97,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		309F0F331DA33A9E009A7777 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30D76A851DB0628D00B3F5EE /* VideoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		30EA92071DA19A1400FEB7E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				302072E91DA1858D0004DB40 /* Assets.xcassets */,
 				302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */,
 				302072EE1DA1858D0004DB40 /* Info.plist */,
+				309F0F311DA33828009A7777 /* Videos */,
+				30EA92121DA2003300FEB7E7 /* TextMateFiles */,
 				30EA920E1DA1F3ED00FEB7E7 /* Fonts */,
+				306563681DA947BB009683DA /* SampleSource */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -101,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				30EA920C1DA19B5E00FEB7E7 /* UIColor+Convenience.swift */,
-				30EA92101DA1F44A00FEB7E7 /* UIFonts+Convenience.swift */,
+				30EA92101DA1F44A00FEB7E7 /* UIFont+Convenience.swift */,
+				30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,9 +198,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309F0F321DA33828009A7777 /* Videos in Resources */,
+				30EA92131DA2003300FEB7E7 /* TextMateFiles in Resources */,
 				30EA920F1DA1F3ED00FEB7E7 /* Fonts in Resources */,
 				302072ED1DA1858D0004DB40 /* LaunchScreen.storyboard in Resources */,
 				302072EA1DA1858D0004DB40 /* Assets.xcassets in Resources */,
+				306563691DA947BB009683DA /* SampleSource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,10 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30EA92111DA1F44A00FEB7E7 /* UIFonts+Convenience.swift in Sources */,
+				30EA92111DA1F44A00FEB7E7 /* UIFont+Convenience.swift in Sources */,
 				30EA920B1DA19B5200FEB7E7 /* PresentationViewController.swift in Sources */,
 				302072E31DA1858D0004DB40 /* AppDelegate.swift in Sources */,
+				30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */,
 				30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */,
+				30D76A881DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  UIFonts+Convenience.swift
+//  UIFont+Convenience.swift
 //  RustSideStory
 //
 //  Created by Christopher Luu on 10/2/16.
@@ -9,12 +9,15 @@
 import UIKit
 
 enum Font {
+	case courierNew
 	case dirtyEgo
 
 	var name: String {
 		switch self {
 		case .dirtyEgo:
 			return "DirtyEgo"
+		case .courierNew:
+			return "CourierNewPSMT"
 		}
 	}
 
