@@ -54,6 +54,9 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		super.viewDidLoad()
 
 		automaticallyAdjustsScrollViewInsets = false
+
+		var page = CGFloat(0)
+		setupSlide1(page: &page)
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
