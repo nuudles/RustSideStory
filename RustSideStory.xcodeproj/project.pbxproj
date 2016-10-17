@@ -15,6 +15,7 @@
 		306563691DA947BB009683DA /* SampleSource in Resources */ = {isa = PBXBuildFile; fileRef = 306563681DA947BB009683DA /* SampleSource */; };
 		3065636C1DA9495D009683DA /* PresentationViewController+Slide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */; };
 		3065636E1DA94A8F009683DA /* PresentationViewController+Slide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */; };
+		306563701DA94B3C009683DA /* PresentationViewController+Slide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3065636F1DA94B3C009683DA /* PresentationViewController+Slide3.swift */; };
 		309F0F321DA33828009A7777 /* Videos in Resources */ = {isa = PBXBuildFile; fileRef = 309F0F311DA33828009A7777 /* Videos */; };
 		30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A851DB0628D00B3F5EE /* VideoView.swift */; };
 		30D76A881DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */; };
@@ -37,6 +38,7 @@
 		306563681DA947BB009683DA /* SampleSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SampleSource; sourceTree = "<group>"; };
 		3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide1.swift"; sourceTree = "<group>"; };
 		3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide2.swift"; sourceTree = "<group>"; };
+		3065636F1DA94B3C009683DA /* PresentationViewController+Slide3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide3.swift"; sourceTree = "<group>"; };
 		309F0F311DA33828009A7777 /* Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Videos; sourceTree = "<group>"; };
 		30D76A851DB0628D00B3F5EE /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		30D76A871DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatedPagingScrollViewController+KeepViewRange.swift"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				3065636B1DA9495D009683DA /* PresentationViewController+Slide1.swift */,
 				3065636D1DA94A8F009683DA /* PresentationViewController+Slide2.swift */,
+				3065636F1DA94B3C009683DA /* PresentationViewController+Slide3.swift */,
 			);
 			name = Slides;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				3065636C1DA9495D009683DA /* PresentationViewController+Slide1.swift in Sources */,
 				30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */,
 				30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */,
+				306563701DA94B3C009683DA /* PresentationViewController+Slide3.swift in Sources */,
 				30D76A881DB2DF9900B3F5EE /* AnimatedPagingScrollViewController+KeepViewRange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
