@@ -23,21 +23,11 @@ extension PresentationViewController {
 		meLabel.text = "Christopher Luu\ngithub.com/nuudles\n@nuudles"
 		contentView.addSubview(meLabel)
 
-		let rustCodeLabel = UILabel()
-		rustCodeLabel.font = Font.courierNew.withSize(size: 28)
-		rustCodeLabel.numberOfLines = 0
+		let rustCodeLabel = codeLabel(filename: "fizzbuzz", language: .rust)
 		contentView.addSubview(rustCodeLabel)
-		
-		let rustCode = try! String(contentsOf: Bundle.main.url(forResource: "fizzbuzz", withExtension: "rs", subdirectory: "SampleSource")!)
-		rustCodeLabel.attributedText = rustParser.attributedString(for: rustCode)
-		
-		let swiftCodeLabel = UILabel()
-		swiftCodeLabel.font = Font.courierNew.withSize(size: 28)
-		swiftCodeLabel.numberOfLines = 0
+
+		let swiftCodeLabel = codeLabel(filename: "fizzbuzz", language: .swift)
 		contentView.addSubview(swiftCodeLabel)
-		
-		let swiftCode = try! String(contentsOf: Bundle.main.url(forResource: "fizzbuzz", withExtension: "swift", subdirectory: "SampleSource")!)
-		swiftCodeLabel.attributedText = swiftParser.attributedString(for: swiftCode)
 
 		introLabel.snp.makeConstraints { (make) in
 			make.top.equalTo(contentView).offset(30)

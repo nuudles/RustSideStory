@@ -11,6 +11,23 @@ import RazzleDazzle
 import SyntaxKit
 import SnapKit
 
+enum Language {
+	case rust
+	case swift
+	case objC
+
+	var fileExtension: String {
+		switch self {
+		case .rust:
+			return "rs"
+		case .swift:
+			return "swift"
+		case .objC:
+			return "m"
+		}
+	}
+}
+
 class PresentationViewController: AnimatedPagingScrollViewController {
 	// MARK: - Internal variables
 	let bundleManager: BundleManager = {
@@ -79,5 +96,26 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		titleLabel.text = text
 		titleLabel.textColor = .white
 		return titleLabel
+	}
+
+	func codeLabel(filename: String, language: Language, fontSize: CGFloat = 25) -> UILabel {
+		let codeLabel = UILabel()
+		codeLabel.font = Font.courierNew.withSize(size: fontSize)
+		codeLabel.numberOfLines = 0
+
+		let parser: AttributedParser
+		switch language {
+		case .rust:
+			parser = rustParser
+		case .swift:
+			parser = swiftParser
+		case .objC:
+			parser = objCParser
+		}
+
+		let code = try! String(contentsOf: Bundle.main.url(forResource: filename, withExtension: language.fileExtension, subdirectory: "SampleSource")!)
+		codeLabel.attributedText = parser.attributedString(for: code)
+
+		return codeLabel
 	}
 }
