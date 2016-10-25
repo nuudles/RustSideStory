@@ -37,7 +37,7 @@ extension PresentationViewController {
 		rustDetailsLabel.text =
 			"• Backed by Mozilla\n" +
 			"• Safe, concurrent, practical language\n" +
-			"• Guarantees memory/thread safety\n" +
+			"• Guarantees memory/thread safety*\n" +
 			"• Uses RFC process to evolve language"
 		contentView.addSubview(rustDetailsLabel)
 
@@ -55,7 +55,7 @@ extension PresentationViewController {
 			"• The History of Rust (Steve Klabnik):\n   https://youtube.com/watch?v=79PSagCD_AY"
 		contentView.addSubview(rustHistoryLabel)
 
-		let swiftVideoView = VideoView(url: Bundle.main.url(forResource: "IFeelSwifty", withExtension: "m4v", subdirectory: "Videos")!)
+		let swiftVideoView = VideoView(url: Bundle.main.url(forResource: "IFeelSwifty", withExtension: "m4v", subdirectory: "Videos"))
 		contentView.addSubview(swiftVideoView)
 
 		let swiftLogoImageView = UIImageView(image: #imageLiteral(resourceName: "swift-logo"))
@@ -71,7 +71,8 @@ extension PresentationViewController {
 			"• Safe, concurrent, practical language\n" +
 			"• Compatible with Obj C frameworks\n" +
 			"• Useful from scripting to operating systems\n" +
-			"• Inspiration from Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list"
+			"• Inspiration from \"Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list\"" +
+			"• Uses RFC process to evolve language"
 		contentView.addSubview(swiftDetailsLabel)
 
 		let wwdcImageView = UIImageView(image: #imageLiteral(resourceName: "wwdcSwift"))
@@ -85,6 +86,7 @@ extension PresentationViewController {
 		swiftHistoryLabel.text =
 			"• Announced to the world at WWDC 2014, June 2, 2014\n" +
 			"• Development led by Chris Lattner\n" +
+			"• First available commit Jul 17, 2010\n" +
 			"• Swift 1.0 - September 9, 2014\n" +
 			"• Swift 1.2 - April 8, 2015\n" +
 			"• Swift 2.0 - September 21, 2015\n" +
@@ -92,6 +94,12 @@ extension PresentationViewController {
 			"• Swift 3.0 - September 13, 2016\n" +
 			"• Currently 409 contributors\n"
 		contentView.addSubview(swiftHistoryLabel)
+
+		let objCCodeLabel = codeLabel(filename: "swift_history", language: .objC, fontSize: 23)
+		contentView.addSubview(objCCodeLabel)
+
+		let swiftCodeLabel = codeLabel(filename: "swift_history", language: .swift)
+		contentView.addSubview(swiftCodeLabel)
 
 		hisLabel.snp.makeConstraints { (make) in
 			make.lastBaseline.equalTo(storyLabel)
@@ -138,13 +146,21 @@ extension PresentationViewController {
 			make.width.equalTo(view).offset(-100)
 		}
 		swiftHistoryLabel.snp.makeConstraints { (make) in
-			make.top.equalTo(rustLogoImageView.snp.bottom).offset(20)
+			make.top.equalTo(swiftLogoImageView.snp.bottom).offset(20)
 			make.width.equalTo(view).offset(-100)
+		}
+		objCCodeLabel.snp.makeConstraints { (make) in
+			make.top.equalTo(storyLabel.snp.bottom).offset(20)
+			make.width.equalTo(view).offset(-80)
+		}
+		swiftCodeLabel.snp.makeConstraints { (make) in
+			make.top.equalTo(storyLabel.snp.bottom).offset(20)
+			make.width.equalTo(view).offset(-80)
 		}
 
 		keepView(hisLabel, onPages: page...page+3)
-		keepView(herLabel, onPages: page+2...page+6)
-		keepView(storyLabel, onPages: page...page+6)
+		keepView(herLabel, onPages: page+2...page+8)
+		keepView(storyLabel, onPages: page...page+8)
 		keepView(rustVideoView, onPage: page)
 		keepView(rustLogoImageView, onPages: page+1...page+2)
 		keepView(rustDetailsLabel, onPage: page + 1)
@@ -154,6 +170,8 @@ extension PresentationViewController {
 		keepView(swiftDetailsLabel, onPage: page + 4)
 		keepView(wwdcImageView, onPage: page + 5)
 		keepView(swiftHistoryLabel, onPage: page + 6)
+		keepView(objCCodeLabel, onPage: page + 7)
+		keepView(swiftCodeLabel, onPage: page + 8)
 
 		storyLabel.transform = CGAffineTransform(translationX: 50, y: 0)
 
@@ -180,6 +198,6 @@ extension PresentationViewController {
 		herAlphaAnimation[page + 3] = 1.0
 		animator.addAnimation(herAlphaAnimation)
 
-		page += 7
+		page += 9
 	}
 }
