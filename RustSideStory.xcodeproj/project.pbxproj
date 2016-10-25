@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		300F6B351DB9AA8100892345 /* PresentationViewController+Slide6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F6B341DB9AA8100892345 /* PresentationViewController+Slide6.swift */; };
 		300F6B371DB9BCF400892345 /* PresentationViewController+Slide7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F6B361DB9BCF400892345 /* PresentationViewController+Slide7.swift */; };
+		300F6B391DB9BD0000892345 /* PresentationViewController+Slide8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F6B381DB9BD0000892345 /* PresentationViewController+Slide8.swift */; };
 		302072E31DA1858D0004DB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302072E21DA1858D0004DB40 /* AppDelegate.swift */; };
 		302072EA1DA1858D0004DB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302072E91DA1858D0004DB40 /* Assets.xcassets */; };
 		302072ED1DA1858D0004DB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302072EB1DA1858D0004DB40 /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		300F6B341DB9AA8100892345 /* PresentationViewController+Slide6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide6.swift"; sourceTree = "<group>"; };
 		300F6B361DB9BCF400892345 /* PresentationViewController+Slide7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide7.swift"; sourceTree = "<group>"; };
+		300F6B381DB9BD0000892345 /* PresentationViewController+Slide8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PresentationViewController+Slide8.swift"; sourceTree = "<group>"; };
 		302072DF1DA1858D0004DB40 /* RustSideStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustSideStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		302072E21DA1858D0004DB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		302072E91DA1858D0004DB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				306563731DA966EB009683DA /* PresentationViewController+Slide5.swift */,
 				300F6B341DB9AA8100892345 /* PresentationViewController+Slide6.swift */,
 				300F6B361DB9BCF400892345 /* PresentationViewController+Slide7.swift */,
+				300F6B381DB9BD0000892345 /* PresentationViewController+Slide8.swift */,
 			);
 			name = Slides;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				3065636C1DA9495D009683DA /* PresentationViewController+Slide1.swift in Sources */,
 				306563721DA94B7B009683DA /* PresentationViewController+Slide4.swift in Sources */,
 				30D76A861DB0628D00B3F5EE /* VideoView.swift in Sources */,
+				300F6B391DB9BD0000892345 /* PresentationViewController+Slide8.swift in Sources */,
 				300F6B351DB9AA8100892345 /* PresentationViewController+Slide6.swift in Sources */,
 				300F6B371DB9BCF400892345 /* PresentationViewController+Slide7.swift in Sources */,
 				30EA920D1DA19B5E00FEB7E7 /* UIColor+Convenience.swift in Sources */,

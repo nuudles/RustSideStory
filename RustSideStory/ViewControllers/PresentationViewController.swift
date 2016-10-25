@@ -80,17 +80,18 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		setupSlide5(page: &page)
 		setupSlide6(page: &page)
 		setupSlide7(page: &page)
+		setupSlide8(page: &page)
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 
-		scrollView.setContentOffset(CGPoint(x: 1024 * 4, y: 0), animated: false)
+		scrollView.setContentOffset(CGPoint(x: 1024 * 0, y: 0), animated: false)
 	}
 
 	// MARK: - Overridden AnimatedPagingScrollViewController methods
 	override func numberOfPages() -> Int {
-		return 15
+		return 51
 	}
 
 	// MARK: - Internal methods
