@@ -23,7 +23,7 @@ extension PresentationViewController {
 		let storyLabel = titleLabel(text: "STORY")
 		contentView.addSubview(storyLabel)
 
-		let rustVideoView = VideoView(url: Bundle.main.url(forResource: "WhenYoureInRust", withExtension: "m4v", subdirectory: "Videos")!)
+		let rustVideoView = VideoView(url: Bundle.main.url(forResource: "WhenYoureInRust", withExtension: "m4v", subdirectory: "Videos"))
 		contentView.addSubview(rustVideoView)
 
 		let rustLogoImageView = UIImageView(image: #imageLiteral(resourceName: "rust-logo"))

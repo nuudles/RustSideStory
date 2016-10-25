@@ -18,10 +18,12 @@ class VideoView: UIView {
 	}()
 
 	// MARK: - Initialization methods
-	init(url: URL) {
+	init(url: URL?) {
 		super.init(frame: .zero)
 
-		playerViewController.player = AVPlayer(url: url)
+		if let url = url {
+			playerViewController.player = AVPlayer(url: url)
+		}
 		addSubview(playerViewController.view)
 
 		playerViewController.view.snp.makeConstraints { (make) in
