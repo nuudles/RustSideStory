@@ -79,6 +79,7 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 		setupSlide4(page: &page)
 		setupSlide5(page: &page)
 		setupSlide6(page: &page)
+		setupSlide7(page: &page)
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
