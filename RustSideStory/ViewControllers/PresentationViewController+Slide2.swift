@@ -12,6 +12,8 @@ import RazzleDazzle
 // MARK: - Slide 2
 extension PresentationViewController {
 	func setupSlide2(page: inout CGFloat) {
+		NSLog("\(#function): \(page)")
+
 		let introLabel = titleLabel(text: "OVERTURE")
 		contentView.addSubview(introLabel)
 

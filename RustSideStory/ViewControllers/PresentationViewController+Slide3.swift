@@ -12,6 +12,8 @@ import RazzleDazzle
 // MARK: - Slide 3
 extension PresentationViewController {
 	func setupSlide3(page: inout CGFloat) {
+		NSLog("\(#function): \(page)")
+
 		let hisLabel = titleLabel(text: "HIS")
 		contentView.addSubview(hisLabel)
 

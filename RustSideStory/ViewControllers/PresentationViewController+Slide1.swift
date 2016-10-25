@@ -12,6 +12,8 @@ import RazzleDazzle
 // MARK: - Slide 1
 extension PresentationViewController {
 	func setupSlide1(page: inout CGFloat) {
+		NSLog("\(#function): \(page)")
+
 		let imageView = UIImageView(image: #imageLiteral(resourceName: "logo"))
 		imageView.contentMode = .scaleAspectFit
 		contentView.addSubview(imageView)
