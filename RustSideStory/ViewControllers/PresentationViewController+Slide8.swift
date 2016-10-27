@@ -38,11 +38,27 @@ extension PresentationViewController {
 			"      • Scripting to operating systems\n"
 		contentView.addSubview(useCasesLabel)
 
-		// In the wild. Mozilla? macOS
-
 		let appStoreImageView = UIImageView(image: #imageLiteral(resourceName: "app_store"))
 		appStoreImageView.contentMode = .scaleAspectFit
 		contentView.addSubview(appStoreImageView)
+
+		let inTheWildLabel = UILabel()
+		inTheWildLabel.font = .systemFont(ofSize: 40)
+		inTheWildLabel.textColor = .white
+		inTheWildLabel.numberOfLines = 0
+		inTheWildLabel.text =
+			"• Rust\n" +
+			"      • Mozilla Firefox 48\n" +
+			"      • DropBox\n" +
+			"      • Chef Habitat (a sponsor of Rust Belt Rust)\n" +
+			"• Swift\n" +
+			"      • Lots and lots of apps\n" +
+			"            • Lyft\n" +
+			"            • Strava\n" +
+			"            • LinkedIn\n" +
+			"            • HipMunk\n" +
+			"      • macOS Dock...\n"
+		contentView.addSubview(inTheWildLabel)
 
 		iTunesStoreVideoView.snp.makeConstraints { (make) in
 			make.top.bottom.width.equalTo(view)
@@ -59,12 +75,17 @@ extension PresentationViewController {
 			make.width.equalTo(view).offset(-100)
 			make.height.equalTo(view).offset(-200)
 		}
+		inTheWildLabel.snp.makeConstraints { (make) in
+			make.top.equalTo(applicationsLabel.snp.bottom).offset(20)
+			make.width.equalTo(view).offset(-80)
+		}
 
 		keepView(iTunesStoreVideoView, onPage: page)
 		keepView(applicationsLabel, onPages: page+1...page+2)
 		keepView(useCasesLabel, onPage: page + 1)
 		keepView(appStoreImageView, onPage: page + 2)
+		keepView(inTheWildLabel, onPage: page + 3)
 
-		page += 3
+		page += 4
 	}
 }
