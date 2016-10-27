@@ -71,7 +71,7 @@ extension PresentationViewController {
 			"• Safe, concurrent, practical language\n" +
 			"• Compatible with Obj C frameworks\n" +
 			"• Useful from scripting to operating systems\n" +
-			"• Inspiration from \"Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list\"" +
+			"• Inspiration from \"Objective-C, Rust, Haskell, Ruby, Python, C#, CLU, and far too many others to list\"\n" +
 			"• Uses RFC process to evolve language"
 		contentView.addSubview(swiftDetailsLabel)
 
