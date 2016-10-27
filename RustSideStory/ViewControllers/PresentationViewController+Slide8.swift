@@ -81,7 +81,7 @@ extension PresentationViewController {
 		}
 
 		keepView(iTunesStoreVideoView, onPage: page)
-		keepView(applicationsLabel, onPages: page+1...page+2)
+		keepView(applicationsLabel, onPages: page+1...page+3)
 		keepView(useCasesLabel, onPage: page + 1)
 		keepView(appStoreImageView, onPage: page + 2)
 		keepView(inTheWildLabel, onPage: page + 3)
