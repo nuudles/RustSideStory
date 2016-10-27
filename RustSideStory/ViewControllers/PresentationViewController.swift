@@ -91,7 +91,7 @@ class PresentationViewController: AnimatedPagingScrollViewController {
 
 	// MARK: - Overridden AnimatedPagingScrollViewController methods
 	override func numberOfPages() -> Int {
-		return 51
+		return 52
 	}
 
 	// MARK: - Internal methods
