@@ -35,7 +35,8 @@ extension PresentationViewController {
 			"      • ARC (Automatic Reference Counting)\n" +
 			"      • Obj C ARC released in 2011\n" +
 			"      • Happens at run-time... ish\n" +
-			"      • Small performance penalty, but better than GC\n"
+			"      • Small performance penalty, but better than GC\n" +
+			"      • Uses autorelease pools\n"
 		contentView.addSubview(rustMemoryLabel)
 
 		let beforeArcLabel = codeLabel(filename: "before_arc", language: .objC)
