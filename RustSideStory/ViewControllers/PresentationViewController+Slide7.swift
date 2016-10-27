@@ -26,7 +26,7 @@ extension PresentationViewController {
 		let rustIfLetCodeLabel = codeLabel(filename: "iflet", language: .rust)
 		contentView.addSubview(rustIfLetCodeLabel)
 
-		let rustEnumCodeLabel = codeLabel(filename: "enums", language: .rust, fontSize: 18)
+		let rustEnumCodeLabel = codeLabel(filename: "enums", language: .rust, fontSize: 20)
 		contentView.addSubview(rustEnumCodeLabel)
 
 		let swiftEnumCodeLabel = codeLabel(filename: "enums", language: .swift)

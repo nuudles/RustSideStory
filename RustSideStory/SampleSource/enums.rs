@@ -1,16 +1,12 @@
 // Rust Enums are awesome! Can contain values!
 
-trait Awesome {
-    fn awesome(self) -> bool;
-}
-
 enum Language {
     Rust,
     Swift,
     Other(String),
 }
 
-impl Awesome for Language {
+impl Language {
     fn awesome(self) -> bool {
         match self {
             Language::Rust => return true,
